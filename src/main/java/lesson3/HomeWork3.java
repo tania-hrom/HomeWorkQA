@@ -1,5 +1,7 @@
 package lesson3;
 
+import lesson4.Util;
+
 import java.util.Random;
 
 public class HomeWork3 {
@@ -21,7 +23,10 @@ public class HomeWork3 {
             }
             i++;
         }
+
         System.out.println("\n"+"Result "+sum);
+        System.out.println("-----//---");
+        System.out.println(Util.firstMethod(array));
         System.out.println("-----");
         System.out.println("Even positive numbers:");
         for (int a=0; a<array.length;a++){
@@ -30,6 +35,10 @@ public class HomeWork3 {
                 System.out.print(array[a]+" ");
             }
         }
+        System.out.println("\n"+"-----//---");
+        Util.secondMethod(array);
+
+
 
     }
 }
